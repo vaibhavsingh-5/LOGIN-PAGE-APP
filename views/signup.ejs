@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs SignUp Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>SignUp</h2>
+        <form action="/signup" method="post">
+            <div class="form-group">
+                <label for="name">Name:-</label>
+                <input type="text" id="name" name="username" placeholder="Enter your name" required autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:-</label>
+                <input type="email" name="email" id="emailaddress" placeholder="Enter Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile-number">Mobile Number:-</label>
+                <input type="tel" id="number" name="mobile_number" placeholder="Enter your Mobile Number" required autocomplete="off" pattern="[0-9]{10}">
+            </div>
+            <p>Or sign up with:</p>
+            <div class="social-login">
+                <button type="button" class="facebook-btn">Continue with Facebook</button>
+                <button type="button" class="google-btn">Continue with Google</button>
+            </div>
+            <p>Already have an account? <a href="signin.html">Login here</a></p> 
+            <button type="submit" class="submit-btn">SignUp</button>
+        </form>
+    </div>
+</body>
+</html>
